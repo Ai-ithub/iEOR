@@ -1,86 +1,86 @@
-# Enhanced-Oil-Recovery---EOR
+# Enhanced Oil Recovery (EOR)
 
-## **مشخصات نیازمندی‌های نرم‌افزار (SRS) برای بهبود برداشت نفت (EOR) با استفاده از هوش مصنوعی**
+## **Software Requirements Specification (SRS) for Enhanced Oil Recovery (EOR) Using Artificial Intelligence**
 
-### **۱. مقدمه**
+### **1. Introduction**
 
-#### **۱.۱ هدف**
-این سند مشخصات نیازمندی‌های نرم‌افزار (SRS) برای یک سیستم هوش مصنوعی جهت بهینه‌سازی فرآیند **افزایش برداشت نفت (EOR)** را ارائه می‌دهد. این سیستم با استفاده از **یادگیری ماشین، تحلیل داده‌های مخزن، و کنترل هوشمند فرآیند تزریق**، عملکرد **EOR** را بهبود داده و هزینه‌های عملیاتی را کاهش می‌دهد.
+#### **1.1 Purpose**
+This document provides the Software Requirements Specification (SRS) for an AI-based system designed to optimize the **Enhanced Oil Recovery (EOR)** process. The system uses **machine learning, reservoir data analysis, and intelligent injection control** to improve **EOR performance** and reduce operational costs.
 
-#### **۱.۲ دامنه**
-سیستم موردنظر در حوزه‌ی **مهندسی نفت و هوش مصنوعی** کاربرد دارد و با هدف **افزایش نرخ بازیافت نفت، کاهش هزینه‌ها و بهینه‌سازی تزریق مواد (گاز، مواد شیمیایی و بخار)** توسعه داده می‌شود. این سیستم شامل ماژول‌های زیر است:
+#### **1.2 Scope**
+The proposed system operates at the intersection of **petroleum engineering and artificial intelligence**, aiming to **increase oil recovery rates, reduce costs, and optimize the injection of materials (gas, chemicals, and steam)**. The system includes the following modules:
 
-- **مدل‌سازی هوشمند مخازن نفتی**
-- **کنترل هوشمند فرآیند تزریق**
-- **پیش‌بینی عملکرد مخزن و کاهش ریسک‌ها**
-- **کاهش هزینه‌های عملیاتی با بهینه‌سازی تزریق**
+- **Intelligent modeling of oil reservoirs**
+- **Smart control of the injection process**
+- **Performance prediction and risk reduction**
+- **Cost reduction through injection optimization**
 
-### **۲. شرح کلی سیستم**
+### **2. System Overview**
 
-#### **۲.۱ ویژگی‌های کلیدی**
-- **تحلیل داده‌های مخزن** برای بهینه‌سازی **تزریق گاز، مواد شیمیایی و بخار**
-- **پیش‌بینی نرخ تولید نفت با یادگیری ماشین**
-- **مدل‌سازی مخزن با شبکه‌های عصبی عمیق (DNNs)**
-- **کنترل هوشمند دبی و فشار تزریق**
-- **یکپارچه‌سازی با سنسورهای IoT برای دریافت داده‌های لحظه‌ای**
-- **مدیریت خودکار فرآیندهای عملیاتی و کاهش هدررفت انرژی**
+#### **2.1 Key Features**
+- **Reservoir data analysis** to optimize the **injection of gas, chemicals, and steam**
+- **Oil production rate prediction using machine learning**
+- **Reservoir modeling with Deep Neural Networks (DNNs)**
+- **Intelligent control of injection flow rate and pressure**
+- **Integration with IoT sensors for real-time data acquisition**
+- **Automated management of operations and energy efficiency**
 
-#### **۲.۲ ذینفعان (Stakeholders)**
-- **شرکت‌های نفت و گاز**
-- **متخصصان مهندسی نفت**
-- **دانشمندان داده و مهندسان هوش مصنوعی**
-- **اپراتورهای حفاری و تولید**
+#### **2.2 Stakeholders**
+- **Oil and gas companies**
+- **Petroleum engineering experts**
+- **Data scientists and AI engineers**
+- **Drilling and production operators**
 
-### **۳. نیازمندی‌های عملکردی**
+### **3. Functional Requirements**
 
-#### **۳.۱ جمع‌آوری و پردازش داده‌ها**
-✅ دریافت داده‌های **زمین‌شناسی، ژئوفیزیکی و عملیاتی** از مخازن نفتی  
-✅ پردازش داده‌های **سنسورهای IoT** و تجهیزات حفاری  
-✅ ایجاد **پایگاه داده مرکزی** برای ذخیره و تجزیه‌وتحلیل داده‌ها  
+#### **3.1 Data Collection and Processing**
+✅ Collect **geological, geophysical, and operational data** from oil reservoirs  
+✅ Process data from **IoT sensors and drilling equipment**  
+✅ Create a **centralized database** for storage and analysis  
 
-#### **۳.۲ مدل‌سازی و پیش‌بینی رفتار مخزن**
-✅ استفاده از **شبکه‌های عصبی عمیق (DNNs)** برای **مدل‌سازی مخزن**  
-✅ شبیه‌سازی فرآیند **تزریق مواد و حرکت سیالات**  
-✅ پیش‌بینی **نرخ تولید نفت و اثرات تزریق** در طول زمان  
+#### **3.2 Reservoir Modeling and Behavior Prediction**
+✅ Use **Deep Neural Networks (DNNs)** for **reservoir modeling**  
+✅ Simulate **material injection and fluid movement**  
+✅ Predict **oil production rates and injection impact** over time  
 
-#### **۳.۳ کنترل هوشمند فرآیند تزریق**
-✅ تنظیم خودکار **دبی و فشار تزریق گاز، مواد شیمیایی و بخار**  
-✅ استفاده از **الگوریتم‌های بهینه‌سازی** برای افزایش بهره‌وری  
-✅ جلوگیری از **آسیب‌های مخزنی** مانند شکستگی‌های کنترل‌نشده  
+#### **3.3 Intelligent Injection Process Control**
+✅ Automatically adjust **flow rate and pressure of injected gas, chemicals, and steam**  
+✅ Use **optimization algorithms** to improve efficiency  
+✅ Prevent **reservoir damage** such as uncontrolled fracturing  
 
-#### **۳.۴ کاهش هزینه‌های عملیاتی**
-✅ **۳۰٪ کاهش هزینه‌های تزریق** با **بهینه‌سازی پارامترهای عملیاتی**  
-✅ **کاهش نیاز به آزمایش‌های میدانی پرهزینه** با استفاده از مدل‌های شبیه‌سازی  
-✅ **بهینه‌سازی مصرف انرژی و مواد شیمیایی**  
+#### **3.4 Operational Cost Reduction**
+✅ **30% reduction in injection costs** through **optimization of operational parameters**  
+✅ **Reduce the need for costly field tests** using simulation models  
+✅ **Optimize energy and chemical usage**  
 
-### **۴. الزامات غیرعملکردی**
-✅ **پایداری و مقیاس‌پذیری:** قابلیت کار با حجم زیاد داده‌ها  
-✅ **امنیت:** حفاظت از داده‌های مخزن و جلوگیری از دسترسی غیرمجاز  
-✅ **یکپارچگی:** امکان اتصال به **سنسورهای IoT، پایگاه‌های داده و سیستم‌های کنترل صنعتی**  
-✅ **رابط کاربری مناسب:** داشبورد هوشمند برای مانیتورینگ عملکرد سیستم  
+### **4. Non-Functional Requirements**
+✅ **Scalability and stability:** Able to handle large data volumes  
+✅ **Security:** Protect reservoir data and prevent unauthorized access  
+✅ **Integration:** Support for **IoT sensors, databases, and industrial control systems**  
+✅ **User-friendly interface:** Smart dashboard for system performance monitoring  
 
-### **۵. مراحل پیاده‌سازی**
+### **5. Implementation Phases**
 
-#### **۵.۱ فاز ۱: جمع‌آوری و پردازش داده‌ها**
-- دریافت داده‌های **حفاری، تزریق و تولید** از مخازن  
-- پردازش **داده‌های حسگرها و تجهیزات** در پایگاه داده مرکزی  
+#### **5.1 Phase 1: Data Collection and Processing**
+- Collect **drilling, injection, and production data** from reservoirs  
+- Process **sensor and equipment data** into the central database  
 
-#### **۵.۲ فاز ۲: توسعه مدل‌های هوش مصنوعی**
-- آموزش **مدل‌های یادگیری ماشین برای پیش‌بینی رفتار مخزن**  
-- طراحی **الگوریتم‌های کنترل هوشمند برای تنظیم پارامترهای تزریق**  
+#### **5.2 Phase 2: AI Model Development**
+- Train **machine learning models to predict reservoir behavior**  
+- Design **intelligent control algorithms** for injection parameter optimization  
 
-#### **۵.۳ فاز ۳: آزمایش و استقرار صنعتی**
-- اجرای **آزمایش پایلوت (Pilot Test) در چاه‌های تولیدی**  
-- مقایسه عملکرد **هوش مصنوعی با روش‌های سنتی EOR**  
-- استقرار نهایی در **چندین میدان نفتی**  
+#### **5.3 Phase 3: Testing and Industrial Deployment**
+- Conduct **pilot tests in production wells**  
+- Compare **AI performance with traditional EOR methods**  
+- Final deployment in **multiple oil fields**  
 
-### **۶. نتایج مورد انتظار**
-✅ **افزایش نرخ بازیافت نفت** تا **۱۵٪ بیشتر از روش‌های سنتی**  
-✅ **کاهش ۲۰ تا ۳۰٪ هزینه‌های عملیاتی**  
-✅ **بهینه‌سازی تزریق و کاهش خطاهای انسانی**  
-✅ **کاهش اثرات زیست‌محیطی با مدیریت انتشار گازها**  
+### **6. Expected Outcomes**
+✅ **Increase oil recovery rates** by up to **15% over traditional methods**  
+✅ **Reduce operational costs by 20–30%**  
+✅ **Optimize injection and minimize human error**  
+✅ **Lower environmental impact** by managing emissions  
 
-### **۷. نتیجه‌گیری**
-📌 **هوش مصنوعی در EOR** باعث افزایش کارایی، کاهش هزینه‌ها و بهینه‌سازی فرآیندهای تزریق می‌شود.  
-📌 با توسعه **مدل‌های هوشمند و IoT**، امکان **مدیریت بلادرنگ مخازن نفتی** فراهم می‌شود.  
-📌 آینده EOR شامل **سیستم‌های کاملاً خودکار برای کنترل، پایش و بهینه‌سازی فرآیند برداشت نفت** خواهد بود.
+### **7. Conclusion**
+📌 **AI in EOR** enhances efficiency, reduces costs, and optimizes injection processes  
+📌 With the development of **intelligent models and IoT integration**, **real-time reservoir management** becomes feasible  
+📌 The future of EOR includes **fully automated systems for monitoring, control, and optimization of oil recovery**
